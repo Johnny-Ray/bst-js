@@ -7,23 +7,23 @@ var bst = require('./lib/nodebst'),
 */
 var comp = {
 	isGreaterThan : function(otherNode) {
-		return this.info > otherNode.info;
+		return this.data > otherNode.data;
 	},
 	isEqualTo : function(otherNode) {
-		return this.info === otherNode.info;
+		return this.data === otherNode.data;
 	},
 	isLessThan : function(otherNode) {
-		return this.info < otherNode.info;
+		return this.data < otherNode.data;
 	}
 }
 
-var node0 = new BSTNode({info : -1}).extend(comp,true);
-var node1 = new BSTNode({info : 1}).extend(comp,true);
-var node2 = new BSTNode({info : 2}).extend(comp,true);
-var node3 = new BSTNode({info : 3}).extend(comp,true);
-var node4 = new BSTNode({info : 4}).extend(comp,true);
-var node5 = new BSTNode({info : 5}).extend(comp,true);
-var node7 = new BSTNode({info : 7}).extend(comp,true);
+var node0 = new BSTNode({data : -1}).extend(comp,true);
+var node1 = new BSTNode({data : 1}).extend(comp,true);
+var node2 = new BSTNode({data : 2}).extend(comp,true);
+var node3 = new BSTNode({data : 3}).extend(comp,true);
+var node4 = new BSTNode({data : 4}).extend(comp,true);
+var node5 = new BSTNode({data : 5}).extend(comp,true);
+var node7 = new BSTNode({data : 7}).extend(comp,true);
 
 var tree = new BSTree({verbose:true});
 
@@ -35,10 +35,10 @@ tree.appendNode(node4);
 tree.appendNode(node0);
 tree.appendNode(node7);
 
-// find node with info 7
+// find node with data 7
 var found7 = tree.findNode(7);
 
-console.log(found7.info) // 7
+console.log(found7.data) // 7
 
 // remove this node
 tree.remove(node7);
