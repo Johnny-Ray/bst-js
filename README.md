@@ -12,6 +12,10 @@
 
 ```javascript
 
+	var bst = require('node-bst'),
+	    BSTNode = bst.BSTNode,
+	    BSTree = bst.BSTree;
+
 	// create a node
 	var node = new BSTNode({data : 1}).extend({
 		customMethod : function(){}
