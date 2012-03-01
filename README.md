@@ -58,7 +58,7 @@
 ```
 
 <pre>
- Full example in examples.js
+ Full examples under examples/ directory
 </pre>
 
 ## Contact
