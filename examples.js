@@ -25,7 +25,7 @@ var node4 = new BSTNode({data : 4}).extend(comp,true);
 var node5 = new BSTNode({data : 5}).extend(comp,true);
 var node7 = new BSTNode({data : 7}).extend(comp,true);
 
-var tree = new BSTree({verbose:true});
+var tree = new BSTree();
 
 tree.appendNode(node3);
 tree.appendNode(node1);
@@ -34,7 +34,6 @@ tree.appendNode(node5);
 tree.appendNode(node4);
 tree.appendNode(node0);
 tree.appendNode(node7);
-
 
 tree.findNode(7, function(node){ 				// find node with data 7
 	console.log(node);							// prints node
