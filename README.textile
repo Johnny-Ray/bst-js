@@ -1,8 +1,0 @@
-<h2>Binary Search Tree for Node...Because sometimes only a BST will do!</h2>
-
-<h3>Installation</h3>
-
-npm install node-bst
-
-<h4>Contact</h4>
-johnny@johnnyray.me
