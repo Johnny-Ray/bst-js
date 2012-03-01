@@ -1,0 +1,16 @@
+{
+	"author" : "Johnny Austin <johnny@johnnyray.me>",
+	"name": "node-bst",
+	"version": "0.0.2",
+	"description": "Binary search tree utility for node.",
+	"main": "lib/nodebst.js",
+	"keywords": [
+		"binary",
+		"search",
+		"tree"
+	],
+	"repository" : {
+		"type" : "git",
+		"url" : "https://Johnny-Ray@github.com/Johnny-Ray/node-bst.git"
+	} 
+}
