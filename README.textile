@@ -4,45 +4,5 @@
 
 npm install node-bst
 
-<h3>Quick example</h3>
-
-<code>
-	var node = new BSTNode({data : 1}).extend({
-		customMethod : function(){}
-	}, true); 
-
-	var node = new BSTNode({
-		data : {firstname : "johnny", lastname : "appleseed"}
-	}).extend({
-		isEqualTo : function(otherNode) {
-			return this.data.firstname === otherNode.data.firstname &&
-				this.data.lastname === otherNode.data.lastname;
-		},
-		
-	}, true);
-
-
-	var comp = {
-		isGreaterThan : function(otherNode){
-			// do something
-		},
-		isLessThan : function(otherNode){
-			// do something
-		},
-		isEqualTo : function(otherNode){
-			// do something
-		}
-	};
-
-	var node = new BSTNode({data : 1}).extend(comp, true);
-
-	var tree = new BSTree();
-	tree.appendNode(node);
-	tree.findNode(1, callback(foundNode){
-		console.log(foundNode);
-	});
-
-</code>
-
 <h4>Contact</h4>
 johnny@johnnyray.me
