@@ -1,4 +1,6 @@
-# Binary Search Tree for Node...Because sometimes only a BST will do!
+# Binary Search Tree for Node
+
+## Because sometimes only a BST will do!
 
 ## Install
 
