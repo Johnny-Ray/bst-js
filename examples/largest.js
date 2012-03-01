@@ -1,4 +1,4 @@
-var bst = require('./lib/nodebst'),
+var bst = require('../lib/nodebst'),
 	BSTNode = bst.BSTNode,
 	BSTree = bst.BSTree;
 
@@ -35,15 +35,10 @@ tree.appendNode(node4);
 tree.appendNode(node0);
 tree.appendNode(node7);
 
-tree.findNode(7, function(node){ 				// find node with data 7
-	console.log(node);							// prints node
-	tree.remove(node7, function(err){			// remove 7
-		if (err) {
-			console.error(err);					// error if we try to remove a non-existing node
-		} else {
-			tree.findNode(7, function(_node){	// find node we just removed
-				console.log(_node);				// undefined
-			})
-		}
-	});
-});
+console.log('\nFetching largest node. Should be 7\n');
+
+// find largest node
+var largest = tree.largestNode();
+
+// prints node with -1
+console.log(largest);
