@@ -9,7 +9,7 @@ npm install node-bst
 <code>
 var node = new BSTNode({data : 1}).extend({
 	customMethod : function(){}
-}, true); // pass in true to the extend function to override existing properties or functions
+}, true); 
 
 var node = new BSTNode({
 	data : {firstname : "johnny", lastname : "appleseed"}
@@ -18,10 +18,9 @@ var node = new BSTNode({
 		return this.data.firstname === otherNode.data.firstname &&
 			this.data.lastname === otherNode.data.lastname;
 	},
-	// .... and so forth for isGreaterThan and isLessThan
+	
 }, true);
 
-// or simply
 
 var comp = {
 	isGreaterThan : function(otherNode){
@@ -43,7 +42,6 @@ tree.findNode(1, callback(foundNode){
 	console.log(foundNode);
 });
 
-// More examples in examples.js
 </code>
 
 <h4>Contact</h4>
