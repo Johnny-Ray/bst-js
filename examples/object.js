@@ -56,6 +56,6 @@ console.log('\nFetching largest node. Should be "blahblahblahblahblahblah"\n');
 // find largest node
 var largest = tree.largestNode();
 
-// prints node with data:7
+// prints node with data:{string:"blahblahblahblahblahblah"}
 console.log(largest);
 
