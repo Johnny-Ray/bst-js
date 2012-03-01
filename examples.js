@@ -48,4 +48,3 @@ tree.findNode(7, function(node){ 				// find node with data 7
 		}
 	});
 });
-
