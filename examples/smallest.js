@@ -40,5 +40,5 @@ console.log('\nFetching smallest node. Should be -1\n');
 // find smallest node
 var smallest = tree.smallestNode();
 
-// prints node with -1
+// prints node with data:-1
 console.log(smallest);

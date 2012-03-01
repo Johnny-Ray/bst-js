@@ -40,5 +40,5 @@ console.log('\nFetching largest node. Should be 7\n');
 // find largest node
 var largest = tree.largestNode();
 
-// prints node with -1
+// prints node with data:7
 console.log(largest);
