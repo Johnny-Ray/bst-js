@@ -15,7 +15,7 @@ var comp = {
 	isLessThan : function(otherNode) {
 		return this.data < otherNode.data;
 	}
-}
+};
 
 var node0 = new BSTNode({data : -1}).extend(comp,true);
 var node1 = new BSTNode({data : 1}).extend(comp,true);

@@ -35,11 +35,11 @@ tree.appendNode(node4);
 tree.appendNode(node0);
 tree.appendNode(node7);
 
-console.log('\nFetching largest node. Should be 7\n');
+console.log('\nTraversing the tree pre-order.');
 
-// find largest node
-var largest = tree.largestNode();
-
-// prints node with data:7
-console.log(largest);
-
+tree.traverse('preOrder', function(node_data){ // first callback fires for every node
+	console.log('Processing ' + node_data);
+}, function(err){ // second callback fires when all nodes have been traversed
+	if (err) console.error(err); return;
+	console.log('All done!')
+});

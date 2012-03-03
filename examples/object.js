@@ -15,7 +15,7 @@ var comp = {
 	isLessThan : function(otherNode) {
 		return this.data.string.length < otherNode.data.string.length;
 	}
-}
+};
 
 var node0 = new BSTNode({data : 
 	{

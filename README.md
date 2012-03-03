@@ -60,8 +60,15 @@
 	});
 
 ```
+## Traversing
 
 <pre>
+ tree.traverse(order, process, onComplete);
+	
+ order - specifies the node visitation order ('preOrder' | 'inOrder' | 'postOrder')
+ process - callback to process a node's data. Takes the node's data as an argument
+ onComplete - callback fires when all nodes have been processed
+
  Full examples under examples/ directory
 </pre>
 
