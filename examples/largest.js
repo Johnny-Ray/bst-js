@@ -38,8 +38,8 @@ tree.appendNode(node7);
 console.log('\nFetching largest node. Should be 7\n');
 
 // find largest node
-var largest = tree.largestNode();
-
-// prints node with data:7
-console.log(largest);
+tree.largestNode(null, function(err, largest){
+	// prints node with data:7
+	console.log(largest)
+});
 

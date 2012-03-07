@@ -51,11 +51,11 @@ tree.appendNode(node3);
 tree.appendNode(node4);
 tree.appendNode(node0);
 
-console.log('\nFetching largest node. Should be "blahblahblahblahblahblah"\n');
+console.log('\nFetching largest node (longest string in data). Should be "blahblahblahblahblahblah"\n');
 
 // find largest node
-var largest = tree.largestNode();
-
-// prints node with data:{string:"blahblahblahblahblahblah"}
-console.log(largest);
+tree.largestNode(null, function(err, theLargest){
+	// prints node with data:{string:"blahblahblahblahblahblah"}
+	console.log(theLargest);
+});
 

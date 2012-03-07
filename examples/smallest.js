@@ -38,7 +38,7 @@ tree.appendNode(node7);
 console.log('\nFetching smallest node. Should be -1\n');
 
 // find smallest node
-var smallest = tree.smallestNode();
-
-// prints node with data:-1
-console.log(smallest);
+tree.smallestNode(null, function(err, smallest) {
+	// prints node with data:-1
+	console.log(smallest);
+});
