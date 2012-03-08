@@ -27,19 +27,13 @@ var node7 = new BSTNode({data : 7}).extend(comp,true);
 
 var tree = new BSTree();
 
-tree.appendNode(node3);
-tree.appendNode(node1);
-tree.appendNode(node2);
-tree.appendNode(node5);
-tree.appendNode(node4);
-tree.appendNode(node0);
-tree.appendNode(node7);
+tree.append([node3, node1, node2, node5, node4, node0, node7], function(){
+	console.log('\nFetching largest node. Should be 7\n');
 
-console.log('\nFetching largest node. Should be 7\n');
-
-// find largest node
-tree.largestNode(null, function(err, largest){
-	// prints node with data:7
-	console.log(largest)
+	// find largest node
+	tree.largestNode(null, function(err, largest){
+		// prints node with data:7
+		console.log(largest)
+	});
 });
 

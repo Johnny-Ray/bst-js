@@ -52,7 +52,11 @@
 
 	// Once you have a node, create a tree and append your node
 	var tree = new BSTree();
-	tree.appendNode(node);
+	tree.append(singleNode);
+
+	// OR append an array of nodes. Nodes will be appended in the order they appear
+	// in the array
+	tree.append([appendFirst, appendSecond, appendThird]);
 
 
 	tree.findNode(1, callback(foundNode){ // find your node

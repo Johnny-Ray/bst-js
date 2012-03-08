@@ -27,19 +27,12 @@ var node7 = new BSTNode({data : 7}).extend(comp,true);
 
 var tree = new BSTree();
 
-tree.appendNode(node3);
-tree.appendNode(node1);
-tree.appendNode(node2);
-tree.appendNode(node5);
-tree.appendNode(node4);
-tree.appendNode(node0);
-tree.appendNode(node7);
+tree.append([node3, node1, node2, node5, node4, node0, node7], function(){
+	console.log('\nTraversing the tree in order.\n');
 
-console.log('\nTraversing the tree in order.\n');
-
-tree.traverse('inOrder', function(node_data){ // first callback fires for every node
-	console.log('Processing ' + node_data);
-}, function(err){ // second callback fires when all nodes have been traversed
-	if (err) console.error(err); return;
-	console.log('All done!')
+	tree.traverse('inOrder', function(node_data){ // first callback fires for every node
+		console.log('Processing ' + node_data);
+	}, function(err){ // second callback fires when all nodes have been traversed
+		console.log('\nAll done!')
+	});
 });

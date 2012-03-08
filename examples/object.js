@@ -45,17 +45,14 @@ var node4 = new BSTNode({data :
 
 var tree = new BSTree();
 
-tree.appendNode(node1);
-tree.appendNode(node2);
-tree.appendNode(node3);
-tree.appendNode(node4);
-tree.appendNode(node0);
+tree.append([node1, node4, node3, node2, node0], function(){
+	console.log('\nFetching largest node (longest string in data). Should be "blahblahblahblahblahblah"\n');
 
-console.log('\nFetching largest node (longest string in data). Should be "blahblahblahblahblahblah"\n');
-
-// find largest node
-tree.largestNode(null, function(err, theLargest){
-	// prints node with data:{string:"blahblahblahblahblahblah"}
-	console.log(theLargest);
+	// find largest node
+	tree.largestNode(null, function(err, theLargest){
+		// prints node with data:{string:"blahblahblahblahblahblah"}
+		console.log(theLargest);
+	});
 });
+
 

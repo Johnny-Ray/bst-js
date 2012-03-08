@@ -27,18 +27,15 @@ var node7 = new BSTNode({data : 7}).extend(comp,true);
 
 var tree = new BSTree();
 
-tree.appendNode(node3);
-tree.appendNode(node1);
-tree.appendNode(node2);
-tree.appendNode(node5);
-tree.appendNode(node4);
-tree.appendNode(node0);
-tree.appendNode(node7);
+tree.append([node3, node1, node2, node5, node4, node0, node7], function(){
+	console.log('\nDone populating tree...\n');
 
-console.log('\nSearching for 7...\n');
+	console.log('\nSearching for 7...\n');
 
-// find node with data 7
-tree.findNode(7, function(node){
-	// prints node
-	console.log(node);
+	// find node with data 7
+	tree.findNode(7, function(node){
+		// prints node
+		console.log(node);
+	});
 });
+
