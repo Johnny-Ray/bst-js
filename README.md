@@ -1,18 +1,18 @@
-# Binary Search Tree for Node
+# Binary Search Tree for JavaScript
 
 ## Because sometimes only a BST will do!
 
 ## Install
 
 <pre>
- npm install node-bst
+ npm install bst-js
 </pre>
 
 ## Usage
 
 ```javascript
 
-	var bst = require('node-bst'),
+	var bst = require('bst-js'),
 	    BSTNode = bst.BSTNode,
 	    BSTree = bst.BSTree;
 
