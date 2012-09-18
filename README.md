@@ -4,9 +4,9 @@
 
 ## Install
 
-<pre>
+```
  npm install bst-js
-</pre>
+```
 
 ## Usage
 
@@ -59,7 +59,7 @@
 	tree.append([appendFirst, appendSecond, appendThird]);
 
 
-	tree.findNode(1, callback(foundNode){ // find your node
+	tree.findNode(1, functoin(foundNode){ // find your node
 		console.log(foundNode);
 	});
 

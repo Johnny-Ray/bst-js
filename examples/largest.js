@@ -1,4 +1,4 @@
-var bst = require('../lib/nodebst'),
+var bst = require('../lib/index'),
 	BSTNode = bst.BSTNode,
 	BSTree = bst.BSTree;
 
