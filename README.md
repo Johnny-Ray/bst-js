@@ -59,7 +59,7 @@
 	tree.append([appendFirst, appendSecond, appendThird]);
 
 
-	tree.findNode(1, functoin(foundNode){ // find your node
+	tree.findNode(1, function(foundNode){ // find your node
 		console.log(foundNode);
 	});
 
